@@ -1,0 +1,5 @@
+<h1>Edit Text box</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.text_box_path(@conn, :update, @text_box)) %>
+
+<span><%= link "Back", to: Routes.text_box_path(@conn, :index) %></span>

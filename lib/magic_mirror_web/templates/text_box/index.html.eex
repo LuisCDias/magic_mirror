@@ -1,0 +1,32 @@
+<h1>Listing Text boxes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Content</th>
+      <th>X pos</th>
+      <th>Y pos</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for text_box <- @text_boxes do %>
+    <tr>
+      <td><%= text_box.name %></td>
+      <td><%= text_box.content %></td>
+      <td><%= text_box.x_pos %></td>
+      <td><%= text_box.y_pos %></td>
+
+      <td>
+        <%= link "Show", to: Routes.text_box_path(@conn, :show, text_box) %>
+        <%= link "Edit", to: Routes.text_box_path(@conn, :edit, text_box) %>
+        <%= link "Delete", to: Routes.text_box_path(@conn, :delete, text_box), method: :delete, data: [confirm: "Are you sure?"] %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Text box", to: Routes.text_box_path(@conn, :new) %></span>

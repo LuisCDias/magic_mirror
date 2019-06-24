@@ -1,0 +1,28 @@
+<h1>Show Text box</h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @text_box.name %>
+  </li>
+
+  <li>
+    <strong>Content:</strong>
+    <%= @text_box.content %>
+  </li>
+
+  <li>
+    <strong>X pos:</strong>
+    <%= @text_box.x_pos %>
+  </li>
+
+  <li>
+    <strong>Y pos:</strong>
+    <%= @text_box.y_pos %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.text_box_path(@conn, :edit, @text_box) %></span>
+<span><%= link "Back", to: Routes.text_box_path(@conn, :index) %></span>
