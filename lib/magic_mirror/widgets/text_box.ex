@@ -1,4 +1,7 @@
 defmodule MagicMirror.Widgets.TextBox do
+  @moduledoc """
+  The TextBox Widget module.
+  """
   use Ecto.Schema
   import Ecto.Changeset
 
