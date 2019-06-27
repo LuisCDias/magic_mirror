@@ -1,3 +1,3 @@
-defmodule MagicMirrorWeb.PageViewTest do
+defmodule MagicMirrorWeb.DashboardViewTest do
   use MagicMirrorWeb.ConnCase, async: true
 end

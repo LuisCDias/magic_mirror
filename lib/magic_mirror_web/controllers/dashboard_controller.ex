@@ -1,4 +1,4 @@
-defmodule MagicMirrorWeb.PageController do
+defmodule MagicMirrorWeb.DashboardController do
   use MagicMirrorWeb, :controller
 
   def index(conn, _params) do

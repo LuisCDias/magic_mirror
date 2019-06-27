@@ -16,7 +16,8 @@ defmodule MagicMirrorWeb.Router do
   scope "/", MagicMirrorWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/", DashboardController, :index
+    resources "/textboxes", TextBoxController
   end
 
   # Other scopes may use custom stacks.
